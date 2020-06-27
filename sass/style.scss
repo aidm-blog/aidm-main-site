@@ -35,10 +35,12 @@ $font-body : $font-Mont;
 
     box-sizing: border-box;
 }
+
 ::selection {
     background-color: $color-black-stone;
     color: $color-desert-white;
 }
+
 // fix for safari font issue
 html,
 body {
@@ -51,7 +53,7 @@ html {
     position: relative;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased !important;
- 
+
 
 }
 
@@ -69,6 +71,9 @@ body {
 
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -83,6 +88,7 @@ footer {
     p {
         padding: 0;
         margin: 0;
+        font-size: 14px;
     }
 }
 
@@ -135,12 +141,13 @@ ul {
 
 .email__ID {
     padding: 5px;
-    border-bottom:1px solid ;
+    border-bottom: 1px solid;
     text-decoration: none;
+
     &:hover {
         background-color: $secondary-color;
         text-decoration: none;
-        border-bottom: 1px solid $secondary-color ;
+        border-bottom: 1px solid $secondary-color;
 
     }
 }
@@ -852,14 +859,14 @@ div#emailSubscribe {
     /* Chrome/Opera/Safari */
     color: $primary-color;
     opacity: 0.35;
-    
+
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
     color: $primary-color;
     opacity: 0.35;
-    
+
 
 }
 
@@ -867,7 +874,7 @@ div#emailSubscribe {
     /* IE 10+ */
     color: $primary-color;
     opacity: 0.35;
-    
+
 
 }
 
@@ -875,7 +882,7 @@ div#emailSubscribe {
     /* Firefox 18- */
     color: $primary-color;
     opacity: 0.35;
-    
+
 
 }
 
@@ -926,7 +933,17 @@ div#emailSubscribe {
 
 // work With Us section
 
-#workWithUs p {
+#workWithUs {
+    background: $color-desert-white;
+    p {
+
+        font-size: 1.5em;
+        line-height: 1.6;
+    }
+}
+
+p {
+
     font-size: 1.5em;
     line-height: 1.6;
 }
@@ -938,14 +955,14 @@ div#emailSubscribe {
     right: 0;
     padding: 0 15px 55px 0;
     z-index: 999;
-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 
 //******************************** media queries
 
 @media all and (max-width:786px) {
-   
+
 
     .p-sm-0 {
         padding: 0 !important;
@@ -1121,6 +1138,10 @@ transition: all 0.5s;
     .contactUsCard {
         padding: 20px 10px;
         margin-bottom: 45px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
 

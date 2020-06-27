@@ -102,49 +102,49 @@ document.querySelector("#currentYear").innerHTML = year;
 
 // handling email subs input
 
-let userInputEmail = document.querySelector(".emailIDSubmitBtn");
-let errorMsg  = {
-  'emptyInputEmail': 'Kindly enter a valid email ID' ,
-  'invalidEmailInput': 'Please check the entered email ID' ,
-  'validEmailInput': 'Thanks for providing your email ID. <br> We will soon add it to our list.'
-}
-userInputEmail.addEventListener("click", () => {
-  event.preventDefault();
-  let emailField = document.querySelector("#userEmailAddress").value;
-let emailBoxErrMsg  = document.querySelector('#emailBoxErrMsg');
-let validEmailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+// let userInputEmail = document.querySelector(".emailIDSubmitBtn");
+// let errorMsg  = {
+//   'emptyInputEmail': 'Kindly enter a valid email ID' ,
+//   'invalidEmailInput': 'Please check the entered email ID' ,
+//   'validEmailInput': 'Thanks for providing your email ID. <br> We will soon add it to our list.'
+// }
+// userInputEmail.addEventListener("click", () => {
+//   event.preventDefault();
+//   let emailField = document.querySelector("#userEmailAddress").value;
+// let emailBoxErrMsg  = document.querySelector('#emailBoxErrMsg');
+// let validEmailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
-let emailInputIsValid = validEmailRegex.test(emailField);
+// let emailInputIsValid = validEmailRegex.test(emailField);
+// // console.log(validEmailRegex.test(emailField));
+
+//   if (emailField == "") {
+//     // alert("please enter the email ID");
+//     console.log("email input empty");
+    
+//     emailBoxErrMsg.innerHTML = errorMsg.emptyInputEmail;
+//     emailBoxErrMsg.classList = 'm-10 display-block'
+//   }
+
+
+//   else if(emailInputIsValid == false) {
+//     console.log("email not correct");
 // console.log(validEmailRegex.test(emailField));
 
-  if (emailField == "") {
-    // alert("please enter the email ID");
-    console.log("email input empty");
-    
-    emailBoxErrMsg.innerHTML = errorMsg.emptyInputEmail;
-    emailBoxErrMsg.classList = 'm-10 display-block'
-  }
+//     emailBoxErrMsg.innerHTML = errorMsg.invalidEmailInput;
+//     emailBoxErrMsg.classList = 'm-10 display-block'
+//   } 
 
-
-  else if(emailInputIsValid == false) {
-    console.log("email not correct");
-console.log(validEmailRegex.test(emailField));
-
-    emailBoxErrMsg.innerHTML = errorMsg.invalidEmailInput;
-    emailBoxErrMsg.classList = 'm-10 display-block'
-  } 
-
-  else if (emailInputIsValid == true) {
-    console.log('correct email ID');
+//   else if (emailInputIsValid == true) {
+//     console.log('correct email ID');
  
-    console.log(validEmailRegex.test(emailField));
+//     console.log(validEmailRegex.test(emailField));
     
-        emailBoxErrMsg.innerHTML = errorMsg.validEmailInput;
-        emailBoxErrMsg.classList = 'm-10 display-block emailBoxSuccessMsg'
-  }
+//         emailBoxErrMsg.innerHTML = errorMsg.validEmailInput;
+//         emailBoxErrMsg.classList = 'm-10 display-block emailBoxSuccessMsg'
+//   }
   
-});
+// });
 
 
 

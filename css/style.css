@@ -40,6 +40,15 @@ body {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -54,6 +63,7 @@ footer {
 footer p {
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 
 .bg-dark {
@@ -911,7 +921,16 @@ div#emailSubscribe .emailIDSubmitBtn .far {
   color: #7f00ff;
 }
 
+#workWithUs {
+  background: #FAF8ED;
+}
+
 #workWithUs p {
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+p {
   font-size: 1.5em;
   line-height: 1.6;
 }
@@ -1063,6 +1082,12 @@ div#emailSubscribe .emailIDSubmitBtn .far {
   .contactUsCard {
     padding: 20px 10px;
     margin-bottom: 45px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
