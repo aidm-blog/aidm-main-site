@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 ::-moz-selection {
   background-color: #1C1D24;
   color: #FAF8ED;
@@ -58,6 +63,7 @@ footer {
   /* Vertically center the text there */
   background-color: #000000;
   color: #FAF8ED;
+  padding: 20px 0;
 }
 
 footer p {
@@ -707,8 +713,7 @@ header nav ul li a:hover {
 }
 
 .sub-title {
-  margin: 10px 10px 30px 10px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   font-size: 2em;
   color: #000000;
@@ -794,6 +799,7 @@ input {
   max-width: 600px;
   min-width: 310px;
   width: 100%;
+  padding: 20px;
 }
 
 #emailInput {
@@ -836,9 +842,6 @@ div#emailSubscribe .emailIDSubmitBtn {
   background-color: #7f00ff;
   color: #FAF8ED;
   outline: none;
-  position: absolute;
-  top: 44px;
-  right: 6px;
   width: 115px;
   font-size: 1.25em;
   cursor: pointer;
@@ -851,6 +854,18 @@ div#emailSubscribe .emailIDSubmitBtn:hover {
 div#emailSubscribe .emailIDSubmitBtn .far {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+#mc_embed_signup .mc-field-group input {
+  padding: 20px !important;
+}
+
+#mc_embed_signup .clear {
+  clear: both;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 ::-webkit-input-placeholder {

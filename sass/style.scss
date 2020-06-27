@@ -1,3 +1,9 @@
+* {
+    // padding: 0;
+    // margin: 0;
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 @import url('https://pro.fontawesome.com/releases/v5.12.0/css/all.css');
 
@@ -84,7 +90,7 @@ footer {
     // height: auto;
     background-color: $color-black;
     color: $color-desert-white;
-
+    padding: 20px 0;
     p {
         padding: 0;
         margin: 0;
@@ -698,8 +704,8 @@ header {
 }
 
 .sub-title {
-    margin: 10px 10px 30px 10px;
-    font-weight: 400;
+    // margin: 10px 10px 30px 10px;
+    font-weight: 500;
     text-align: center;
     // letter-spacing: 3px;
     font-size: 2em;
@@ -794,6 +800,7 @@ input {
     max-width: 600px;
     min-width: 310px;
     width: 100%;
+    padding: 20px;
 }
 
 #emailInput {
@@ -821,8 +828,10 @@ div#emailSubscribe {
         position: relative;
         font-family: $font-body;
         font-weight: 600;
+        
     }
 
+ 
     input,
     button {
         -webkit-appearance: none;
@@ -837,9 +846,9 @@ div#emailSubscribe {
         background-color: #7f00ff;
         color: $color-desert-white;
         outline: none;
-        position: absolute;
-        top: 44px;
-        right: 6px;
+        // position: absolute;
+        // top: 44px;
+        // right: 6px;
         width: 115px;
         font-size: 1.25em;
         cursor: pointer;
@@ -854,6 +863,17 @@ div#emailSubscribe {
         }
     }
 }
+
+#mc_embed_signup .mc-field-group input {
+    padding: 20px !important;
+}
+
+#mc_embed_signup .clear {
+    clear: both;
+    margin: 0 auto;
+    width: fit-content;
+}
+
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
@@ -1111,6 +1131,7 @@ p {
         color: $primary-color;
         opacity: 0.35;
         font-size: 0.7em;
+        // line-height: 1.6px;
     }
 
     ::-moz-placeholder {
