@@ -1,4 +1,40 @@
-@import 'style.scss';
+* {
+    // padding: 0;
+    // margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://pro.fontawesome.com/releases/v5.12.0/css/all.css');
+
+
+
+// variables
+$color-desert-white: #FAF8ED; //white desert
+$color-black: #000000;
+$color-black-stone: #1C1D24; //black stone;
+$primary-color: #7f00ff;
+$primary-hover: #1b1aff; // dark on hover : #1b1aff
+$secondary-color: #d3dde6;
+$grey: #bebebe;
+$color-dark-pink: #DE1B85;
+$color-white: #ffffff;
+
+$primary-link-color: $primary-color;
+$secondary-link-color: $secondary-color;
+
+//fonts
+
+$font-Mont: 'Montserrat',
+sans-serif;
+;
+
+
+// $font-body : 'Special Elite', cursive;
+// $font-body : $font-title;
+// $font-body : 'Public Sans',sans-serif;
+$font-body : $font-Mont;
+
 
 #articlePost {
 
