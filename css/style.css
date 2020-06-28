@@ -803,10 +803,9 @@ p {
 
 #emailInput,
 input {
-  max-width: 600px;
+  max-width: 650px;
   min-width: 310px;
   width: 100%;
-  padding: 20px;
 }
 
 #emailInput {
@@ -974,6 +973,10 @@ div#emailSubscribe .emailIDSubmitBtn .far {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+#mc_embed_signup .mc-field-group label {
+  margin-bottom: 10px !important;
 }
 
 @media all and (max-width: 1024px) {
